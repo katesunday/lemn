@@ -1,6 +1,7 @@
 import './globals.css';
 import Link from 'next/link';
 import Head from 'next/head';
+import Image from 'next/image';
 
 export const metadata = {
   title: 'Lemn',
@@ -15,11 +16,15 @@ export default function RootLayout({
   return (
     <html lang="en" className="h-full">
       <Head>
-        <link rel="icon" type="image/png" href="/icon.png" />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <body className="bg-gradient m-12 flex min-h-screen flex-col font-mono">
         <header className="p-4 text-center">
-          <Link href="/" className="text-center text-xl font-bold">
+          <Link
+            href="/"
+            className="flex items-center justify-center gap-3 text-center text-xl font-bold"
+          >
+            <Image src="/favicon.ico" alt="logo" width={40} height={40} />
             Pokemon Information
           </Link>
         </header>
