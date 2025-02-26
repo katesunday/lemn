@@ -118,7 +118,7 @@ export default function PokemonList() {
         ) : (
           <div>
             <ul className="flex flex-wrap justify-between gap-3">
-              {state.list?.length &&
+              {!!state.list?.length &&
                 state.list.map((item, index) => {
                   const globalIndex =
                     (state.previous
