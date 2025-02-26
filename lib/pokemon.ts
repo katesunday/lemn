@@ -14,7 +14,7 @@ export interface Pokemon {
 export async function fetchPokemonTypes(
   offset: number = 0,
   limit: number = 40,
-  //intentionally put 40 here knowing that amount of types are fixed
+  //intentionally put 40 here knowing that amount of types is fixed
 ): Promise<{ types: PokemonType[]; next: string; previous: string }> {
   const res = await fetch(`https://pokeapi.co/api/v2/type/?offset=${offset}&limit=${limit}`);
   const data = await res.json();
