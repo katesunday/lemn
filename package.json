@@ -1,6 +1,5 @@
 {
   "name": "lemn",
-  "homepage": "https://katesunday.github.io/lemn",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -8,9 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "format": "prettier --write .",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d out --dotfiles"
+    "format": "prettier --write ."
   },
   "dependencies": {
     "next": "15.1.7",
